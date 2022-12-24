@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Aim Training</title>
   </head>
   <body>
@@ -14,19 +14,19 @@
 
     <div class="screen">
       <h1>Choose a time</h1>
-      <ul class="time-list">
+      <ul class="time-list" id="time-list">
         <li>
-          <button class="time-btn">
+          <button class="time-btn" data-time="10">
             10 sec
           </button>
         </li>
         <li>
-          <button class="time-btn">
+          <button class="time-btn" data-time="20">
             20 sec
           </button>
         </li>
         <li>
-          <button class="time-btn">
+          <button class="time-btn" data-time="30">
             30 sec
           </button>
         </li>
@@ -37,5 +37,6 @@
       <h3>Left <span id="time">00:00</span></h3>
       <div class="board" id="board"></div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
